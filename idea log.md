@@ -294,3 +294,9 @@ driverClass=com.mysql.cj.jdbc.Driver
 > 关于使用BeanUtils.populate(bean,value)来注入bean，`req.getParameterMap()`无法获取到提交的表单的信息。
 
 解决：表单中的name属性需要与bean实体类中的属性名一致。
+
+#### 2022-5-3
+
+shiro config 启动报错   bean shiroFilterFactoryBean 未找到
+
+> 最新版的jar不能是config中的方法不能是getshiroFilterFactoryBeane必须是shiroFilterFactoryBean,不然会报找不到的错误

@@ -18,7 +18,8 @@ git的设置使用git config命令。
     $ git config -e --global (所有仓库)
 #### Git基本操作
 Git常用的是以下6个命令：git clone、git push、git add、git commit、git checkout、git pull
-![git-command](/image/git-command.jpg)
+![git-command](https://s2.loli.net/2022/05/04/SuQ5syAJWBkVEtR.jpg)
+
 ```
 workspace：工作区    staging area：暂存区/缓存区  
 local repository：版本库或本地仓库    remote repository：远程仓库
@@ -79,3 +80,5 @@ local repository：版本库或本地仓库    remote repository：远程仓库
 删除远程仓库
 
     $ git remote rm [别名]
+
+![img](https://s2.loli.net/2022/05/04/ifTQWDHYFctu5vh.jpg)
