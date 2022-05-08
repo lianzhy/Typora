@@ -3347,8 +3347,9 @@ public class MyLocaleResolver implements LocaleResolver {
 ```java
 @Configuration //配置类
 @EnableSwagger2// 开启Swagger2的自动配置
+//@EnableOpenApi   3.0版本  启动方式 localhost:8080/swagger-ui/
 public class SwaggerConfig {  
-}j
+}
 ```
 
 5、访问测试 ：http://localhost:8080/swagger-ui.html ，可以看到swagger的界面；
@@ -4390,7 +4391,7 @@ public String show(@PathVariable("id") int id,Model model){
 
 ![img](https://img2020.cnblogs.com/blog/1905053/202004/1905053-20200412225836241-1744130417.png)
 
-## ******单一应用架构******
+## ****单一应用架构****
 
 当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本。此时，用于简化增删改查工作量的数据访问框架(ORM)是关键。
 
@@ -4406,7 +4407,7 @@ public String show(@PathVariable("id") int id,Model model){
 
 3、不利于升级维护
 
-## ***\**\**\*垂直应用架构\**\**\****
+## 垂直应用架构
 
 当访问量逐渐增大，单一应用增加机器带来的加速度越来越小，将应用拆成互不相干的几个应用，以提升效率。此时，用于加速前端页面开发的Web框架(MVC)是关键。
 
@@ -4416,13 +4417,13 @@ public String show(@PathVariable("id") int id,Model model){
 
 缺点：公用模块无法重复利用，开发性的浪费
 
-## **********分布式服务架构**********
+## 分布式服务架构
 
 当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，使前端应用能更快速的响应多变的市场需求。此时，用于提高业务复用及整合的**分布式服务框架(RPC)**是关键。
 
 ![img](https://img2020.cnblogs.com/blog/1905053/202004/1905053-20200412225913839-69515130.png)
 
-## ***\**\**\**\**\*流动计算架构\**\**\**\**\****
+## 流动计算架构
 
 当服务越来越多，容量的评估，小服务资源的浪费等问题逐渐显现，此时需增加一个调度中心基于访问压力实时管理集群容量，提高集群利用率。此时，用于**提高机器利用率的资源调度和治理中心**(SOA)[ Service Oriented Architecture]是关键。
 
@@ -4448,7 +4449,7 @@ RPC两个核心模块：通讯，序列化。
 
 测试环境搭建
 
-## ***\**\**\**\**\*Dubbo\**\**\**\**\****
+## Dubbo
 
 Apache Dubbo |ˈdʌbəʊ| 是一款高性能、轻量级的开源Java RPC框架，它提供了三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册和发现。
 
@@ -4484,13 +4485,13 @@ l 服务消费者，从提供者地址列表中，基于软负载均衡算法，
 
 l 服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。
 
-## ***\**\**\**\**\*Dubbo环境搭建\**\**\**\**\****
+## Dubbo环境搭建
 
 点进dubbo官方文档，推荐我们使用Zookeeper 注册中心
 
 什么是zookeeper呢？可以查看官方文档
 
-## ***\**\**\**\**\*Window下安装zookeeper\**\**\**\**\****
+## Window下安装zookeeper
 
 1、下载zookeeper ：地址， 我们下载3.4.14 ， 最新版！解压zookeeper
 
@@ -4538,7 +4539,7 @@ get /kuangshen：获取/kuangshen节点的值
 
 ![img](https://img2020.cnblogs.com/blog/1905053/202004/1905053-20200412230133804-1513007496.png)
 
-## ***\**\**\**\**\*window下安装dubbo-admin\**\**\**\**\****
+## window下安装dubbo-admin
 
 dubbo本身并不是一个服务软件。它其实就是一个jar包，能够帮你的java程序连接到zookeeper，并利用zookeeper消费、提供服务。
 
