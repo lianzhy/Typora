@@ -310,7 +310,7 @@ Spring Web 模型-视图-控制器 (MVC) 框架是围绕 DispatcherServlet 设�
 
 ​	**处理器映射器、处理器适配器、视图解析器**
 
-**只需手动处理视图解析器处理器映射器、处理器适配器在通过注解实现时被`<mvc:annotation-driven/>`开启注解驱动代替无需再注册！！**
+**只需手动处理视图解析器，处理器映射器、处理器适配器在通过注解实现时被`<mvc:annotation-driven/>`开启注解驱动代替无需再注册！！**
 
 ## SpringMVC 中的Controller和Resultful
 
