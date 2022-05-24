@@ -294,6 +294,25 @@ WeUI是一套同微信原生视觉体验一致的基础样式库， 由微信官
 
 ## 四、第一个Vue程序
 
+* Vue-cli工程中每个文件夹和文件的用处
+* dist 文件夹：默认 npm run build 命令打包生成的静态资源文件，用于生产部署
+* node_modules：存放npm命令下载的开发环境和生产环境的依赖包
+* public：有的叫assets：存放项目中需要用到的资源文件，css、js、images以及index
+* src文件夹：存放项目源码及需要引用的资源文件
+* src-api文件夹：放ajax相关操作的代码文件:index.js(相关的接口),ajax.js(封装的axios,拦截器)。有的叫service：自己配置的vue请求后台接口方法
+* src-common文件夹：stylus的混合文件.styl，不要写到public也可以
+* src-components文件夹：存放vue开发中抽离的一些公共组件
+* src-mock文件夹：mock数据存放文件及mock模拟接口（没有后台接口或接口不完整情况下可以模拟后台接口）
+* src-pages文件夹：涉及到路由的组件
+* src-router文件夹:vue-router，路由器及路由的配置
+* src-store文件夹：存放 vue中的状态数据，用vuex集中管理
+* App.vue文件：使用标签渲染整个工程的.vue组件
+* main.js文件：vue-cli工程的入口文件
+* package.json文件：用于 node_modules资源部 和 启动、打包项目的 npm 命令管理
+* build 文件夹：用于存放 webpack 相关配置和脚本。开发中仅 偶尔使用 到此文件夹下 webpack.base.conf.js 用于配置 less、sass等css预编译库，或者配置一下 UI 库
+* config 文件夹：主要存放配置文件，用于区分开发环境、线上环境的不同，常用到此文件夹下 config.js 配置开发环境的 端口号、是否开启热加载 或者 设置生产环境的静态资源相对路径、是否开启gzip压缩、npm run build 命令打包生成静态资源的名称和路径等
+    ![在这里插入图片描述](https://s2.loli.net/2022/05/12/NTESzAvjcqGpUiD.png)
+
 ### 4.1、什么是MVVM
 
 MVVM（Model-View-ViewModel）是一种软件设计模式，由微软WPF（用于替代WinForm，以前就是用这个技术开发桌面应用程序的）和Silverlight（类似于Java Applet，简单点说就是在浏览器上运行WPF）的架构师Ken Cooper和Ted Peters开发，是一种简化用户界面的**事件驱动编程方式**。由John Gossman（同样也是WPF和Sliverlight的架构师）与2005年在他的博客上发表。

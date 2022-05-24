@@ -300,3 +300,25 @@ driverClass=com.mysql.cj.jdbc.Driver
 shiro config 启动报错   bean shiroFilterFactoryBean 未找到
 
 > 最新版的jar不能是config中的方法不能是getshiroFilterFactoryBeane必须是shiroFilterFactoryBean,不然会报找不到的错误
+
+#### 2022-5-13
+
+SSM整合--controller层无法自动注入service
+
+![img](https://s2.loli.net/2022/05/13/gkosdn9TRAVrei4.png)
+
+可能出现的原因：
+
+ 1、没有开启组件扫描，也就是 spring 配置文件 没加 component-scan
+
+ 2、没有加载spring，也就是说spring都没加载，肯定就用不了spring的组件咯
+
+
+解决：
+
+ 1、检查 spring配置文件是否开启了组件扫描
+
+ 2、检查是否加载了spring
+
+
+​       

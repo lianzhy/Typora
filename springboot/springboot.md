@@ -1863,12 +1863,12 @@ public FilterRegistrationBean webStatFilter() {
 ## **9.1、导入mybatis所需要的依赖**
 
 ```xml
-        <!-- 引入 myBatis，这是 MyBatis官方提供的适配 Spring Boot 的，而不是Spring Boot自己的-->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
-        </dependency>
+<!-- 引入 myBatis，这是 MyBatis官方提供的适配 Spring Boot 的，而不是Spring Boot自己的-->
+<dependency>
+  <groupId>org.mybatis.spring.boot</groupId>
+  <artifactId>mybatis-spring-boot-starter</artifactId>
+  <version>2.1.0</version>
+</dependency>
 ```
 
 ## **9.2、配置数据库连接信息**
